@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script type="text/javascript">
+        window.onload= function(){
+        	document.getElementById("btn").onclick = function(){
+        	       alert("DOM Script");	
+        	}
+      
+        $(document).ready(function(){ // window.onload= function(){ 모든문서가 로딩된 후에,
+        	$('#btn').click(function(){  //일회성함수(익명)
+        	    $(this).hide();
+        	});
+        });
+       /*  $(fucntion(){
+        ~~~ 단축표현
+        })
+        } */
+   </script>
+</head>
+<body>
+         <input type="button" id="btn" value="버튼z"> 
+      <button id="btn">버튼2</button> 
+</body>
+</html>
